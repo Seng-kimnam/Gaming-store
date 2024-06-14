@@ -1,0 +1,22 @@
+1 cover
+
+2 Content
+
+3 Introduction 
+
+4 Objective (points that we plan)
+
+5 scope (How many points that we can do in objective)
+
+6 Technology (What progamming language that we used) (HTML CSS PHP JAVASCript )
+
+7 Database Diagram (Relationship) 
+
+8 Result 
+
+9 Conclusion
+
+10 Demo
+
+
+

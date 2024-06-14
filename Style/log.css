@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Odor+Mean+Chey&family=Poppins:wght@200;300;400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+html {
+  font-size: 62.5%;
+  /* height: 100%; */ 
+}
+
+body {
+    font-family: "Poppins", sans-serif, "Odor Mean Chey", serif;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    background: url(../Images/gamingbg.webp) center / cover no-repeat;
+}
+.login-container {
+  background:linear-gradient(to center, red , green , blue);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  padding: 8rem;
+  width: 100rem;
+  box-shadow: 0 0 50px black;
+  border-radius: 2cqmax;
+}
+
+.img {
+  width: 40rem;
+  
+}
+
+.header {
+  margin-bottom: 2.5rem;
+  font-size: 2rem;
+
+}
+
+.form {
+  width: 35rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4rem;
+  position: relative;
+}
+
+.form>input {
+  font: bold 2rem "Poppins", sans-serif, "Odor Mean Chey", serif;
+  /* font-size: 2rem;
+  font-weight: bold; */
+  padding: 1rem 5rem;
+  outline: none;
+  border: none;
+  border-radius: 0.8rem;
+  transition: all 0.15s ease;
+}
+
+.btn-log  , .btnsignup{
+  border: none;
+  outline: none;
+  transition: all 0.15s ease;
+}
+
+.btn-container {
+  margin-right: 6rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  gap: 5rem;
+  
+}
+
+input[type="submit"] ,.btnsignup {
+  font: bold 1.8rem "Poppins", sans-serif, "Odor Mean Chey", serif;
+  color: white;
+  padding: 1rem 2.5rem;
+  background-color: rgb(72, 32, 74);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 0.8rem;
+}
+
+.form>input:focus {
+  outline: 4px solid dodgerblue;
+}
+
+.form>input:focus::placeholder{
+  color: white;
+}
+.btn-log:hover , .btnsignup:hover {
+  filter: brightness(2);
+  transform: scale(1.2);
+}
+
+/* .btn-log:active , .btnsignup:active {
+  transform: scale(0.9);
+} */
+
+.user {
+  color: grey;
+  font-size: 1.8rem;
+  position: absolute;
+  top: 14px;
+  left: 10px;
+}
+
+.password {
+  color: grey;
+  font-size: 1.8rem;
+  position: absolute;
+  top: 104px;
+  left: 10px;
+}
+a 
+{
+  text-decoration: none;
+  color: white;
+}
+h2
+{
+  color: white;
+}
