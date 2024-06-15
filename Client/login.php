@@ -68,7 +68,7 @@
                         Swal.fire({
                             icon: "success",
                             title: "Successful",
-                            text: "Submit Successfully",
+                            text: "login Successfully",
                             confirmButtonText: "OK"
                         }).then((result) => {
                             if (result.isConfirmed) {
