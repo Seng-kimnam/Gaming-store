@@ -198,7 +198,7 @@ confirm(\"Sure?\");'><i class='fa-solid fa-trash'></i></a></td>");
               Swal.fire({
                   icon: "success",
                   title: "Successful",
-                  text: "Submit Successfully",
+                  text: "Paying Successful",
                   confirmButtonText: "OK"
               }).then((result) => {
                   if (result.isConfirmed) {

@@ -70,7 +70,8 @@
             $result = $stmt->get_result();
             $num = 1;
             $total = 0;
-            $max = 1;
+            $maxQuantity = 0;
+            $maxProduct = "";
             while ($row = $result->fetch_assoc()) {
                 echo "<tr>";
                 echo "<td>" . $num . "</td>";
@@ -80,27 +81,20 @@
                 echo "</tr>";
                 $total += $row["Amount"];
                 $num++;
-                if($row["Quantity"] > $max)
+                if($row["Quantity"] > $maxQuantity)
                 {
-                    $max = $row["Quantity"];
-                    echo "<h3>!!! ទំនិញដែលលក់ដាច់ជាងគេ :". $row['Productname']. ' </br>ចំនួន : '. $max."គ្រឿង </h3>";
+                    $maxQuantity= $row["Quantity"];
+                    $maxProduct = $row["Productname"];
                     // continue;
-                   
                 }
-                // elseif($row["Quantity"] < $max)
-                // {
-                //     $max = $row["Quantity"];
-                //     echo "<h3>!!! ទំនិញដែលលក់ដាច់ជាងគេ :". $row['Productname']. ' </br>ចំនួន : '. $max."គ្រឿង </h3>";
-                //     // continue;
-                // }
-                // else{
-                //     echo "ew";
-                // }
                 
             }
             echo ("<tr><td colspan='3'>Total Amount</td><td> $ $total.00</td></tr>");
                 ?>
         </table>
+          <?php if ($maxProduct !== '') : ?>
+            <h3>!!! ទំនិញដែលលក់ដាច់ជាងគេ : <?php echo $maxProduct; ?> </br>ចំនួន : <?php echo $maxQuantity; ?> គ្រឿង</h3>
+        <?php endif; ?>
     </div>
 </body>
 
