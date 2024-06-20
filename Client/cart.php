@@ -159,8 +159,6 @@ $footer3 = array("Support", "Get Help", "Registeration", "RazerStore Support", "
 $footer4 = array('Company', 'About', 'Careers', 'Newsrooms', 'zVenture', 'Contact Us') ;
 // 5 th field of footer store in array -->
 $footer5 = array('Follow Us','fa-facebook','fa-instagram','fa-threads','fa-x-twitter','fa-youtube','fa-tiktok','fa-discord'); 
-
-
 ?>
 <body>
 
